@@ -290,6 +290,7 @@ class compression:
                                     
                                     
                                     sda32=sda2[ei:ei+8]
+                                    T22 = int(sda32, 2)
                                     Ssize=len(sda32)
                                    
                                     if Ssize==0:
@@ -301,6 +302,7 @@ class compression:
                                     	
                                     T16=sda2[8:Times+8]
                                     T16="1"+T16
+                                    
                                     Ssize=len(T16)
                                    
                                     if Ssize==0:
@@ -379,6 +381,7 @@ class compression:
 	                                    	T4=0	
 	                                    if T6==T8:
 	                                    	T15=T15+1
+	                                    
 	                                    	
                                     T23=T22+T7
                                     sda17=bin(T23)[2:]   
@@ -418,7 +421,24 @@ class compression:
                                     
                                     
                                     if   Circle_times2==1:
-                                    	L=len(sda17)
+                                    		L=len(sda17)
+                                    		n = int(sda17, 2)
+                                    		qqwslenf=len(sda17)
+                                    		qqwslenf=(qqwslenf//8)*2
+                                    		qqwslenf=str(qqwslenf)
+                                    		qqwslenf="%0"+qqwslenf+"x"
+                                    		jl=binascii.unhexlify(qqwslenf % n)
+                                    		sssssw=len(jl)
+                                    		szxzzza=""
+                                    		szxzs=""
+                                    		sda2=sda6
+                                    		f2.write(jl)
+                                    		x2 = time()
+                                    		x3=x2-x
+                                    		xs=float(x3)
+                                    		
+                                    		return print(x3)
+                                    	
                                    
                                                      
                                                      
@@ -468,8 +488,9 @@ class compression:
 
                                     
                                     sda10=sda3
+                                    
+                                    T1= int(sda10, 2)
                                    
-                                    T1 = int(sda10, 2)
                                     T10=T1
                                     T12=0
                                     while T5!=1:
@@ -546,6 +567,7 @@ class compression:
                                     
                                      
                                     T22=T7-T21
+                                    cc=0
                                     if T22>255:
                                            cc=1
                                            
@@ -569,7 +591,7 @@ class compression:
                                     sda2=sda17
                                    
 
-                                    if i==1:
+                                    if i==2:
                                         wer=""
                                         wer=sda6
                                         sda4=""
@@ -583,6 +605,7 @@ class compression:
                                         
                                         if  Circle_times2==1:
                                             #print(lenf6-1)
+                                          
 
                                             if T7==T10:
                                             	sda33=bin(T9)[2:]
@@ -651,7 +674,7 @@ class compression:
 
                                                                                       
 
-                                            sda17=sda17+szx
+                                            sda17=szx+sda17
                                             L=len(sda17)
                                             if cc==1:
                                             	raise SystemExit
