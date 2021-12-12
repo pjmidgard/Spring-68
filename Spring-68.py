@@ -450,22 +450,7 @@ class compression:
 	                                    	
                                     T23=T22+T7
                                     sda17=bin(T23)[2:]   
-                                    if sda17[0:1]=="0":
-                                    	 	sda17="01111111"+sda3
-                                    	 	n = int(sda17, 2)
-                                    	 	qqwslenf=len(sda17)
-                                    	 	qqwslenf=(qqwslenf//8)*2
-                                    	 	qqwslenf=str(qqwslenf)
-                                    	 	qqwslenf="%0"+qqwslenf+"x"
-                                    	 	jl=binascii.unhexlify(qqwslenf % n)
-                                    	 	sssssw=len(jl)
-                                    	 	szxzzza=""
-                                    	 	szxzs=""
-                                    	 	f2.write(jl)
-                                    	 	x2 = time()
-                                    	 	x3=x2-x
-                                    	 	return print(x3)
-                                    sda17=sda17[1:]
+                            
                                 
                                     
                                    
@@ -582,7 +567,7 @@ class compression:
                                     	 x3=x2-x
                                     	 return print(x3)
                                     
-                                    sda10="1"+sda3
+                                    sda10=sda3
                                    
                                     T1 = int(sda10, 2)
                                     T10=T1
