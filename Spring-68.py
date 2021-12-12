@@ -432,7 +432,9 @@ class compression:
                                     T7=1
                                     T1=1
                                     T8=0
+                                    T11=T6
                                     T6=T4
+                                    
                                     T9=T4
                                     
                                     T3=1
@@ -481,7 +483,7 @@ class compression:
                                    
                                     
                                     
-                                    if T12==T15 and T33==0 and T24==T22:
+                                    if T12==T15 and T33==0 and T6==T11:
                                     	sda17=bin(T27)[2:] 
                                     else:
                                     	raise SystemExit
