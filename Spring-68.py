@@ -301,6 +301,10 @@ class compression:
                                     	
                                     	
                                     T16=sda2[8:Times+8]
+                                    if T16[0:8]=="00000000":
+                                    		raise SystemExit
+                                    
+                                    	
                                     T16="1"+T16
                                     
                                     Ssize=len(T16)
