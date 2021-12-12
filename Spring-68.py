@@ -225,28 +225,7 @@ class compression:
                                     ei=0
                                    
 
-                                    if Circle_times2==0:
-                                           
-                                           g=1
-                                           
-                                                  
-                                    if sda2[0:8]=="01111111": 
-                                    
-                                    	
-                                    	 sda17=sda2[8:]
-                                    	 n = int(sda17, 2)
-                                    	 qqwslenf=len(sda17)
-                                    	 qqwslenf=(qqwslenf//8)*2
-                                    	 qqwslenf=str(qqwslenf)
-                                    	 qqwslenf="%0"+qqwslenf+"x"
-                                    	 jl=binascii.unhexlify(qqwslenf % n)
-                                    	 sssssw=len(jl)
-                                    	 szxzzza=""
-                                    	 szxzs=""
-                                    	 f2.write(jl)
-                                    	 x2 = time()
-                                    	 x3=x2-x
-                                    	 return print(x3)
+
                                         
                                     	   
                                     	
@@ -314,54 +293,19 @@ class compression:
                                     Ssize=len(sda32)
                                    
                                     if Ssize==0:
-                                                     
-                                         sda17="01111111"+sda3
-                                         #print(sda17)
-                                       
-                                         n = int(sda17, 2)
-                                         qqwslenf=len(sda17)
-                                         qqwslenf=(qqwslenf//8)*2
-                                         qqwslenf=str(qqwslenf)
-                                         qqwslenf="%0"+qqwslenf+"x"
-                                         jl=binascii.unhexlify(qqwslenf % n)
-                                         sssssw=len(jl)
-
-                                         szxzzza=""
-                                         szxzs=""
-                                            
-                                         f2.write(jl)
-                                         x2 = time()
-                                         x3=x2-x
-                                         return print(x3)
-                                        
+                                    	raise SystemExit
 
                                     
                                     
                                     	
                                     	
                                     T16=sda2[8:Times+8]
+                                    T16="1"+T16
                                     Ssize=len(T16)
                                    
                                     if Ssize==0:
-                                                     
-                                         sda17="01111111"+sda3
-                                         #print(sda17)
-                                       
-                                         n = int(sda17, 2)
-                                         qqwslenf=len(sda17)
-                                         qqwslenf=(qqwslenf//8)*2
-                                         qqwslenf=str(qqwslenf)
-                                         qqwslenf="%0"+qqwslenf+"x"
-                                         jl=binascii.unhexlify(qqwslenf % n)
-                                         sssssw=len(jl)
-
-                                         szxzzza=""
-                                         szxzs=""
-                                            
-                                         f2.write(jl)
-                                         x2 = time()
-                                         x3=x2-x
-                                         return print(x3)
+                                    		raise SystemExit
+                   
                                     
                                     T12 = int(T16, 2)
                                     sda2=sda2[Times+8:]
@@ -393,20 +337,8 @@ class compression:
                                    
                                     T6 = int(sda10, 2)
                                     if T6==0:
-                                             sda17="01111111"+sda3
-                                             n = int(sda17, 2)
-                                             qqwslenf=len(sda17)
-                                             qqwslenf=(qqwslenf//8)*2
-                                             qqwslenf=str(qqwslenf)
-                                             qqwslenf="%0"+qqwslenf+"x"
-                                             jl=binascii.unhexlify(qqwslenf % n)
-                                             sssssw=len(jl)
-                                             szxzzza=""
-                                             szxzs=""
-                                             f2.write(jl)
-                                             x2 = time()
-                                             x3=x2-x
-                                             return print(x3)
+                                        	raise SystemExit
+                                           
                                     
                                     T7=1
                                     T1=1
@@ -487,26 +419,10 @@ class compression:
                                     
                                     if   Circle_times2==1:
                                     	L=len(sda17)
-                                    if L>lenf6F:
+                                   
                                                      
-                                         sda17="01111111"+sda3
-                                         #print(sda17)
-                                       
-                                         n = int(sda17, 2)
-                                         qqwslenf=len(sda17)
-                                         qqwslenf=(qqwslenf//8)*2
-                                         qqwslenf=str(qqwslenf)
-                                         qqwslenf="%0"+qqwslenf+"x"
-                                         jl=binascii.unhexlify(qqwslenf % n)
-                                         sssssw=len(jl)
-
-                                         szxzzza=""
-                                         szxzs=""
-                                            
-                                         f2.write(jl)
-                                         x2 = time()
-                                         x3=x2-x
-                                         return print(x3)
+                                                     
+                  
                                         
                                 if i==2:
 
@@ -549,23 +465,7 @@ class compression:
                                     
                                     
                                   
-                                    if sda2[0:8]=="01111111"  or lenf6<=56: 
-                                    
-                                    	
-                                    	 sda17=sda2[8:]
-                                    	 n = int(sda17, 2)
-                                    	 qqwslenf=len(sda17)
-                                    	 qqwslenf=(qqwslenf//8)*2
-                                    	 qqwslenf=str(qqwslenf)
-                                    	 qqwslenf="%0"+qqwslenf+"x"
-                                    	 jl=binascii.unhexlify(qqwslenf % n)
-                                    	 sssssw=len(jl)
-                                    	 szxzzza=""
-                                    	 szxzs=""
-                                    	 f2.write(jl)
-                                    	 x2 = time()
-                                    	 x3=x2-x
-                                    	 return print(x3)
+
                                     
                                     sda10=sda3
                                    
@@ -686,7 +586,7 @@ class compression:
 
                                             if T7==T10:
                                             	sda33=bin(T9)[2:]
-                                            	sda18=bin(T12)[2:]
+                                            	sda18=bin(T12)[3:]
                                             	sda30=bin(T22)[2:]
                                             	
                                             	
@@ -753,10 +653,8 @@ class compression:
 
                                             sda17=sda17+szx
                                             L=len(sda17)
-                                            if L>lenf6F or cc==1:
-                                                     
-                                            	sda17="01111111"+sda3
-
+                                            if cc==1:
+                                            	raise SystemExit
                                             n = int(sda17, 2)
                                             qqwslenf=len(sda17)
                                             qqwslenf=(qqwslenf//8)*2
