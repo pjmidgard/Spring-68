@@ -382,12 +382,62 @@ class compression:
 	                                    if T6==T8:
 	                                    	T15=T15+1
 	                                    
-	                                    	
-                                    T23=T22+T7
-                                    sda17=bin(T23)[2:]   
-                            
-                                
+	                                	
                                     
+                                    T23=T22+T7
+                                    T27=T23
+                                    
+                                    T7=1
+                                    
+                                    T1=1
+                                    T8=0
+                                  
+                                    
+                                    
+                                    T3=1
+                                    T4=0
+                                    T5=0
+                                    
+                                    T15=0
+                                    
+                                    while T7!=T23:
+	                                    T2=T1%2
+	                                    T3=T1
+	                                    
+	                                    if T2==0:
+	                                        T3=T3//2
+	                                        T1=T3
+	                                        T4=T4+1
+	                                        
+	                                       
+	                                    
+	                                    	
+	                                    else:
+	                                    	T3=(T3*3)+1
+	                                    	T1=T3
+	                                    	T4=T4+1
+
+	                                    	
+	                                    if T3==1 and T4>=2:
+	                                    	T4=T4
+	                                    	T8=T4
+	                                    	T5=T3
+	                                    	T7=T7+1
+	                                    	T1=T7
+	                                    	T4=0	
+	                                    if T6==T8:
+	                                    	T15=T15+1
+	                                    	T21=T7
+	                                    	
+	                                       	
+                                    T24=T7-T21
+                                    T25=T24-T23
+                                    T26=T7+T25
+                                    if T26==0:
+                                    	sda17=bin(T27)[2:] 
+                                    else:
+                                    	raise SystemExit
+                                    	
                                    
                                    
                                    
