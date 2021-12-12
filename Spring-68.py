@@ -303,6 +303,8 @@ class compression:
                                     T16=sda2[8:Times+8]
                                     if T16[0:2]=="00":
                                     		raise SystemExit
+                                    if T16[8:10]=="00":
+                                   		 raise SystemExit
                                     
                                     	
                                     T16="1"+T16
