@@ -436,8 +436,9 @@ class compression:
                                     		x2 = time()
                                     		x3=x2-x
                                     		xs=float(x3)
-                                    		
                                     		return print(x3)
+                                    		
+                                    	
                                     	
                                    
                                                      
@@ -605,7 +606,8 @@ class compression:
                                         
                                         if  Circle_times2==1:
                                             #print(lenf6-1)
-                                          
+                                            if T7!=T10:
+                                            	raise SystemExit
 
                                             if T7==T10:
                                             	sda33=bin(T9)[2:]
